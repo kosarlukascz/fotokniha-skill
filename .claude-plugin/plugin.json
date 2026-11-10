@@ -1,0 +1,9 @@
+{
+  "name": "fotokniha",
+  "version": "0.1.0",
+  "description": "Fotokniha z Apple Fotek: výběr nejlepších fotek z let a dovolených, hravá sazba s mapkami a tisková PDF (česky).",
+  "author": {
+    "name": "Lukáš Kosař"
+  },
+  "license": "MIT"
+}

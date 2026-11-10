@@ -1,0 +1,9 @@
+__pycache__/
+.DS_Store
+# projekty fotoknih sem nepatří (soukromé fotky a data)
+data/
+originaly/
+nahledy/
+kniha/
+kniha.json
+vyber.txt

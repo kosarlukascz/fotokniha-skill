@@ -1,0 +1,14 @@
+{
+  "name": "fotokniha-skill",
+  "description": "Skill pro Claude Code: fotokniha z Apple Fotek.",
+  "owner": {
+    "name": "Lukáš Kosař"
+  },
+  "plugins": [
+    {
+      "name": "fotokniha",
+      "source": "./",
+      "description": "Fotokniha z Apple Fotek: výběr nejlepších fotek z let a dovolených, hravá sazba s mapkami a tisková PDF (česky)."
+    }
+  ]
+}

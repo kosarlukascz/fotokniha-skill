@@ -1,0 +1,61 @@
+{
+  "titul": "Jana & Petr",
+  "podtitul": "2016 – 2025",
+  "od": "2016-01-01",
+  "do": "2025-12-31",
+  "osoby": ["Jana Nováková", "Petr Novák"],
+
+  "domovy": [
+    {"nazev": "Olomouc", "lat": 49.594, "lon": 17.251, "od": 2016, "do": 2019},
+    {"nazev": "Praha", "lat": 50.083, "lon": 14.421, "od": 2020, "do": 2025}
+  ],
+  "dalsi_mista": [
+    {"nazev": "Zlín", "lat": 49.226, "lon": 17.667}
+  ],
+  "domovska_zeme": "CZ",
+  "min_fotek": 40,
+  "udalosti_na_rok": 4,
+
+  "roky": {
+    "2016": "první rande a společný začátek",
+    "2017": "Krkonoše, Vídeň a první společný byt",
+    "2019": "Chorvatsko a stěhování do Prahy"
+  },
+
+  "nazvy_mist": {
+    "Krkonošský národní park": "Krkonoše",
+    "Pražský hrad": "Praha",
+    "Hostýnské vrchy": ""
+  },
+
+  "cesty": {
+    "2019-07-12": {"nazev": "Chorvatsko 2019", "cil": "Makarska", "razitko": ["CHORVATSKO", "MAKARSKA"]},
+    "2023-09-02": {"nazev": "Toskánsko 2023", "trasa": ["Florencie", "Siena", "Pienza"]},
+    "2024-05-10": {"razitko": false, "mapa": false}
+  },
+
+  "popisky": {
+    "2021-06-19": "Naše svatba",
+    "2023-02-10/04": "Promoce"
+  },
+
+  "cela_strana": [
+    {"foto": "2019-07-12/08", "popisek": "Makarska · 15. 7. 2019"},
+    {"foto": "2025-03-01/02", "popisek": "", "zarovnani": "dole"}
+  ],
+  "titulni_foto": "2025-08-02/05",
+  "zaver": ["2025-08-02/11", {"foto": "2025-08-02/14", "popisek": ""}],
+
+  "texty": {
+    "mapa_svet": "Kam jsme se spolu podívali",
+    "mapa_domov": "…a po Česku",
+    "konec": "Pokračování příště…",
+    "cisla": [["auto:roky", "let"], ["auto:zeme", "zemí"], ["auto:vylety", "výletů"], ["1", "pes"]]
+  },
+
+  "tisk": {
+    "profil": "saal-30x30-professional",
+    "obalka_foto": "2025-08-02/05",
+    "obalka_text": {"x": 0.5, "y": 0.16, "barva": "#2f2a26", "velikost": 400}
+  }
+}
