@@ -1,105 +1,120 @@
-# Fotokniha z Apple Fotek – skill pro Claude Code
+**English** · [Česky](README.cs.md)
 
-Claude projde celou vaši knihovnu Apple Fotek, najde dovolené, výlety a velké chvíle každého roku, pomůže vybrat
-nejlepší fotky a vysází z nich **hravou fotoknihu**: polaroidy s washi páskou, ručně psané popisky, mapku ke každé
-dovolené, cestovní razítka a úvodní mapu všech míst, kam jste se spolu podívali. Na konci připraví PDF, které
-nahrajete do tiskárny.
+# Fotokniha: a photobook from Apple Photos, made with Claude Code
 
-Hodí se jako dárek: k Vánocům, výročí, narozeninám, „našich deset let“, první rok s miminkem. Technickou práci dělá
-Claude. Vy víte, co se na fotkách děje, rozhodujete o výběru a schvalujete vzhled.
+![A photobook from Apple Photos: maps of every trip, polaroids, handwritten captions](docs/banner.jpg)
 
-## Co v knize bude
-- **Titulní strana** se jmény, roky a fotkou.
-- **Úvodní dvoustrana**: mapa světa s čárkovanými trasami z domova, mapa domova se srdíčky v místech, kde jste
-  bydleli, a velká čísla (roky, země, výlety a cokoli vlastního, třeba „1 pes“).
-- **Každý rok** začíná velkým barevným letopočtem, krátkým podtitulem a mapkou roku.
-- **Fotky** jsou malé polaroidy s popiskem místa a data, nejvýš 8 na stranu.
-- **Každá dovolená** má vlastní mapku: road trip s trasou a zastávkami, nebo „kde to je“ s cestou z domova.
-  K tomu razítko jako v pasu.
-- **Pár fotek přes celou stranu**, závěrečná dvojice přes dvoustranu a „Pokračování příště…“.
+Claude goes through your whole Apple Photos library, finds the trips, day outings and big moments of every year,
+helps you pick the best photos and lays them out as a **playful photobook**: polaroids with washi tape, handwritten
+captions, a map for every trip, passport stamps and an opening map of everywhere you have been together. At the end
+it prepares the PDFs you upload to the printer.
 
-## Jak vybírá
-- Důležité je to, co jste hodně fotili na jednom místě, i doma. Promoce, Vánoce nebo nové kotě jsou v knize,
-  zastávka s pěti fotkami ne.
-- Využívá, co už Fotky ví: kdo je na fotce, kde vznikla a jak ji Apple hodnotí (ostrost, kompozice, světlo).
-- Pro každou kapitolu udělá kontaktní tabuli s očíslovanými kandidáty. Claude je prohlédne a vybere, vy výběr
-  upravíte.
-- Na co si nejde odpovědět z dat (byla to svatba, nebo promoce?), se zeptá.
+It makes a good gift: for Christmas, an anniversary, a birthday, "our ten years", a baby's first year. Claude does
+the technical work. You know what is happening in the photos, you decide what goes in and you approve the look.
 
-## Soukromí
-- **Knihovnu Fotek jen čte.** Nevytváří alba, nemění oblíbené ani jména. Nic se nesynchronizuje přes iCloud,
-  takže se dá dělat i překvapení.
-- Fotky ani náhledy nikam nenahrává. Všechno zůstává ve složce projektu na vašem Macu. Ven jdou jen tisková PDF,
-  která do tiskárny nahrajete sami.
-- Intimní fotky, doklady a screenshoty vynechává sám. Na další hranice se zeptá.
+It was built while making a real book: a 48-page Christmas gift, printed by Saal Digital in November 2026.
 
-## Co budete potřebovat
-- **Mac s aplikací Fotky.** Nejlíp funguje, když máte ve Fotkách pojmenované lidi (album Lidé a zvířata).
-- **Claude Code** (aplikace nebo příkazová řádka) a předplatné Claude. Prohlížení stovek fotek spotřebuje dost
-  kreditů, takže počítejte aspoň s tarifem Pro, u velké knihovny spíš Max.
-- Programy **uv, ImageMagick a Google Chrome** (Chrome vykresluje strany). Claude zkontroluje, co chybí, a po vašem
-  souhlasu je nainstaluje přes [Homebrew](https://brew.sh).
-- Aplikace, ve které Claude běží (Terminál, Claude), potřebuje **Úplný přístup k disku**, aby mohla číst knihovnu
-  Fotek. Najdete ho v Nastavení systému → Soukromí a zabezpečení.
-- Místo na disku: asi 5 MB na každou fotku v knize a pár set MB na tisková data.
+## What the book looks like
+A sample from a made-up book of Jana & Petr, laid out by the skill from free photos from Pexels:
 
-## Instalace
+![Sample spreads: opening maps, the start of a year, a trip with its map and stamp, full-page photos](docs/sample-book.jpg)
 
-### Jako plugin (doporučeno)
-V Claude Code napište:
+- **Title page** with your names, the years and a photo.
+- **Opening spread**: a world map with dashed routes from home, a map of your home country with hearts where you
+  lived, and big numbers (years, countries, day trips and anything of your own, like "1 dog").
+- **Every year** starts with a large coloured year, a short subtitle and a map of the year.
+- **Photos** are small polaroids with the place and date, at most 8 on a page.
+- **Every trip** gets its own map: a road trip with the route and stops, or "where it is" with the way from home.
+  Plus a stamp like the one in your passport.
+- **A few full-page photos**, a closing pair across a spread and "To be continued…".
+
+## How it chooses
+- What matters is what you photographed a lot in one place, at home too. A graduation, Christmas or a new kitten
+  are in the book; a stop with five photos is not.
+- It uses what Photos already knows: who is in a photo, where it was taken and how Apple rates it (sharpness,
+  composition, light).
+- For every chapter it makes a contact sheet of numbered candidates. Claude looks through them and picks; you
+  adjust the selection.
+- When the data cannot answer something (was it a wedding or a graduation?), it asks.
+
+## Privacy
+- **It only reads your Photos library.** It creates no albums and changes no favourites or names. Nothing syncs
+  through iCloud, so the book can be a surprise.
+- It uploads no photos or previews anywhere. Everything stays in the project folder on your Mac. The only thing
+  that leaves is the print PDFs, which you upload to the printer yourself.
+- It leaves out intimate photos, documents and screenshots on its own, and asks about any other limits.
+
+## What you need
+- **A Mac with the Photos app.** It works best when the people in Photos have names (the People & Pets album).
+- **Claude Code** (the app or the command line) and a Claude subscription. Looking through hundreds of photos uses
+  a fair amount of usage: plan on at least Pro, and Max for a large library.
+- **uv, ImageMagick and Google Chrome** (Chrome renders the pages). Claude checks what is missing and, once you
+  agree, installs it with [Homebrew](https://brew.sh).
+- The app Claude runs in (Terminal, Claude) needs **Full Disk Access** to read the Photos library. You find it in
+  System Settings → Privacy & Security.
+- Disk space: about 5 MB per photo in the book and a few hundred MB for the print files.
+
+## Installation
+
+### As a plugin (recommended)
+In Claude Code, type:
 ```
 /plugin marketplace add kosarlukascz/fotokniha-skill
 /plugin install fotokniha@fotokniha-skill
 ```
-Pak Claude Code restartujte.
+Then restart Claude Code.
 
-### Ručně
-Stáhněte repozitář (**Code → Download ZIP**, nebo `git clone`) a zkopírujte složku `skills/fotokniha`
-do `~/.claude/skills/`. Výsledek: `~/.claude/skills/fotokniha/SKILL.md`. Pak Claude Code restartujte.
+### By hand
+Download the repository (**Code → Download ZIP**, or `git clone`) and copy the `skills/fotokniha` folder to
+`~/.claude/skills/`, so that you end up with `~/.claude/skills/fotokniha/SKILL.md`. Then restart Claude Code.
 
-## První spuštění
-Spusťte Claude Code a napište třeba:
-> Chci udělat fotoknihu pro manželku k Vánocům, našich 10 let od roku 2015. Má to být překvapení.
+## First run
+Start Claude Code and write something like:
+> I want to make a photobook for my wife for Christmas, our 10 years since 2015. It has to be a surprise.
 
-nebo přímo `/fotokniha`. Claude založí složku projektu (např. `~/Fotokniha-Jana`), načte knihovnu a začne se ptát.
-Příště otevírejte Claude Code v této složce, Claude naváže tam, kde jste skončili.
+or just `/fotokniha`. Claude creates a project folder (for example `~/Fotokniha-Jana`), reads the library and starts
+asking. Next time, open Claude Code in that folder and Claude picks up where you left off.
 
-## Jak to probíhá
-| Krok | Co děláte vy | Co dělá Claude |
+## How it goes
+| Step | What you do | What Claude does |
 |---|---|---|
-| 1. Rozhovor | řeknete, pro koho kniha je, za jaké období a do kdy | založí projekt |
-| 2. Knihovna | potvrdíte, kdo je kdo | načte metadata všech fotek (u 60 000 fotek asi minuta) |
-| 3. Roky | potvrdíte, kde jste bydleli, a řeknete, co byly nejasné akce | najde dovolené, výlety a velké chvíle každého roku |
-| 4. Výběr | díváte se a říkáte, co přidat nebo vyhodit | prohlédne kontaktní tabule a vybere nejlepší fotky |
-| 5. Náhled | připomínkujete | vysází knihu a ukáže celou na jednom obrázku i po dvoustranách |
-| 6. Tisk | objednáte | stáhne originály z iCloudu a připraví PDF přesně podle tiskárny |
+| 1. Talk | say who the book is for, which years, and the deadline | creates the project |
+| 2. Library | confirm who is who | reads the metadata of every photo (about a minute for 60,000 photos) |
+| 3. Years | confirm where you lived and explain unclear events | finds the trips, day outings and big moments of every year |
+| 4. Selection | look and say what to add or drop | goes through the contact sheets and picks the best photos |
+| 5. Preview | comment | lays out the book and shows it whole on one image and spread by spread |
+| 6. Print | order | downloads the originals from iCloud and makes PDFs exactly to the printer's spec |
 
-Celé to zabere jeden až dva večery. Nejdéle trvá výběr fotek a ladění podle vás.
+It takes one or two evenings. Choosing the photos and tuning the book to your taste take the longest.
 
-## Tisk
-Připravené a vyzkoušené je to pro **Saal Digital Professional Line 30 × 30 cm** (layflat, nahrání PDF, akrylová
-obálka). Pro jinou tiskárnu se čtvercovou knihou stačí zadat její rozměry. Claude je najde v její specifikaci
-a nastaví (viz [reference/tisk.md](skills/fotokniha/reference/tisk.md)).
+## Printing
+It is set up and tested for **Saal Digital Professional Line 30 × 30 cm** (layflat, PDF upload, acrylic cover).
+For another printer with a square book you only enter its sizes; Claude finds them in the printer's specification
+and sets them (see [reference/tisk.md](skills/fotokniha/reference/tisk.md)).
 
-## Omezení
-- Jen **macOS a Apple Fotky**. Fotky z Google Photos nebo z jiného telefonu je potřeba nejdřív naimportovat do Fotek.
-- Rozvržení je **čtvercové**.
-- Texty v knize jsou česky. Všechny nápisy se dají změnit v nastavení, data a popisky jsou v českém formátu.
-- Výběr je jen tak dobrý jako vaše knihovna. Z let, kdy jste fotili málo nebo jen na jiný telefon, bude v knize méně.
+## Limits
+- **macOS and Apple Photos only.** Photos from Google Photos or another phone have to be imported into Photos first.
+- The layout is **square**.
+- The skill and its tools are written in Czech. Claude talks to you in your language, but the tools print Czech
+  messages and the book's default texts are Czech. Every text in the book can be changed in `kniha.json` (the sample
+  above is in English); dates are written as `16. 7.`.
+- The selection is only as good as your library. Years when you took few photos, or took them on another phone,
+  will have less in the book.
 
-## Co je uvnitř
+## What is inside
 ```
 skills/fotokniha/
-  SKILL.md              postup pro Clauda
-  tools/                nástroje v Pythonu (čtení knihovny, cesty, události, výběr, sazba, tisk)
-  reference/            nastavení knihy a tisk
-  template/             šablona nastavení kniha.json
-  assets/               písmo Caveat
+  SKILL.md              the workflow for Claude
+  tools/                Python tools (reading the library, trips, events, selection, layout, print)
+  reference/            book settings and printing
+  template/             a kniha.json settings template
+  assets/               the Caveat font
 ```
-Nástroje jdou spustit i bez Clauda (`python3 tools/<nástroj>.py --help`). Ke čtení knihovny používají
-[osxphotos](https://github.com/RhetTbull/osxphotos), mapy jsou z [Natural Earth](https://www.naturalearthdata.com)
-(volné dílo, stáhnou se při prvním použití) a písmo je [Caveat](https://github.com/googlefonts/caveat)
-(SIL Open Font License).
+The tools also run without Claude (`python3 tools/<tool>.py --help`). They read the library with
+[osxphotos](https://github.com/RhetTbull/osxphotos); the maps come from [Natural Earth](https://www.naturalearthdata.com)
+(public domain, downloaded on first use) and the font is [Caveat](https://github.com/googlefonts/caveat)
+(SIL Open Font License). The sample photos are from [Pexels](https://www.pexels.com/license/); the photographers are
+listed in [docs/photo-credits.md](docs/photo-credits.md).
 
-## Licence
-MIT, viz [LICENSE](LICENSE).
+## License
+MIT, see [LICENSE](LICENSE).
